@@ -22,38 +22,38 @@ const src = new URL("/assets/hbd2.mp3", import.meta.url).href;
 const steps = [
   {
     target: "#name",
-    content: "This is the input to enter the name.",
+    content: "Điền tên của người sinh nhật",
     placement: "bottom",
     disableBeacon: true,
   },
   {
     target: "#candle",
-    content: "Blow on the Lightning port to extinguish the candle.",
+    content: "Đây là ngọn nến lung linh",
     placement: "bottom",
   },
   {
     target: "#start",
-    content: "Press start to play music and light the candle.",
+    content: "Bấm để bắt đầu sinh nhật",
     placement: "top",
   },
   {
     target: "#pause",
-    content: "Press pause if you want the music to pause temporarily.",
+    content: "Tạm dừng",
     placement: "top",
   },
   {
     target: "#stop",
-    content: "Press stop if you want to cancel temporarily.",
+    content: "Bắt đầu lại",
     placement: "top",
   },
   {
     target: "#toggle-candle",
-    content: "Press button if you want to light or blow out the candle.",
+    content: "Tắt nến ",
     placement: "top",
   },
   {
     target: "#share",
-    content: "Change the name and click 'Share' to send the gift to anyone.",
+    content: "Chia sẻ",
     placement: "top",
   },
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -168,7 +168,7 @@ function App() {
     [setRun]
   );
 
-  const onEnded = useCallback(() => {}, []);
+  const onEnded = useCallback(() => { }, []);
 
   const onKeyPress = (event: KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {

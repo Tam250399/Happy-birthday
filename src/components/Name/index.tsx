@@ -62,11 +62,11 @@ export const Name: React.FC<React.HTMLProps<HTMLInputElement> & InputProps> =
                 width: 400,
                 ...(shareMode || playing
                   ? {
-                      appearance: "none",
-                      backgroundColor: "transparent",
-                      textAlign: "center",
-                      display: name.length > 0 ? "block" : "none",
-                    }
+                    appearance: "none",
+                    backgroundColor: "transparent",
+                    textAlign: "center",
+                    display: name.length > 0 ? "block" : "none",
+                  }
                   : {}),
               },
               value: name,
