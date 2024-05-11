@@ -150,7 +150,7 @@ function App() {
 
       setInterval(detectBlow, 100);
     } catch (error) {
-      console.error("Error accessing microphone:", error);
+      console.error("Lỗi microphone:", error);
     }
   }, []);
 
@@ -189,7 +189,7 @@ function App() {
           blowCandles(stream);
         }
       } catch (error) {
-        console.error("Error accessing microphone:", error);
+        console.error("Lỗi microphone:", error);
       }
     })();
 
@@ -358,8 +358,8 @@ function App() {
           }}
         />
       </div>
-
-      {/* <div
+      {/* 
+      <div
         style={{
           position: "absolute",
           bottom: "0%",
@@ -368,7 +368,7 @@ function App() {
           display: "non",
         }}
       >
-        {version}
+
       </div> */}
     </div>
   );

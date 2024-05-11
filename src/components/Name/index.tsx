@@ -14,8 +14,6 @@ export const Name: React.FC<React.HTMLProps<HTMLInputElement> & InputProps> =
       { name, setName, shareMode, playing, run, ...rest }: InputProps,
       ref: React.LegacyRef<HTMLInputElement>
     ) => {
-      console.log("🚀 ~ playing:", playing);
-      console.log("🚀 ~ shareMode:", shareMode);
       const onChange = useCallback(
         (e: { target: { value: SetStateAction<string> } }) => {
           setName(e.target.value);
@@ -75,7 +73,7 @@ export const Name: React.FC<React.HTMLProps<HTMLInputElement> & InputProps> =
               readOnly: shareMode || playing || run,
               spellCheck: false,
               autoFocus: true,
-              placeholder: "Enter your name",
+              placeholder: "Nhập tên người sinh nhật",
               ...rest,
             }}
           />
